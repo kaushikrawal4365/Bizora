@@ -1,0 +1,1 @@
+export default function Page(){return <main className="main"><section className="simple-page"><div className="content simple-layout"><div className="section-label">about / BIZORA</div><h1 className="simple-title">ABOUT.</h1><div className="simple-copy"><p>V1 detail route. The primary experience lives on the homepage.</p></div></div></section></main>}

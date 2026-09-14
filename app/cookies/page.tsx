@@ -1,0 +1,1 @@
+export default function Page(){return <main className="main"><section className="simple-page"><div className="content simple-layout"><div className="section-label">Legal / BIZORA</div><h1 className="simple-title">COOKIES.</h1><div className="simple-copy"><p>Final business-specific legal copy should be inserted before launch.</p></div></div></section></main>}
