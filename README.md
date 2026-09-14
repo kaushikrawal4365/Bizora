@@ -59,3 +59,9 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
   - Upgraded `.whatsapp-trigger` button with glassmorphism styling, crisp white text contrast, WhatsApp icon indicator, and lime hover accent.
 - Verified build cleanly with `npm run build` (0 errors, 0 warnings).
 
+### 2026-09-14 23:55 IST - Contact Form CSS Fix
+- Restored full `.contact-form` styling rules in `app/globals.css` including field layouts, labels, input focus rings, selects, textareas, and action buttons.
+- Enhanced form input aesthetics with rounded corners, clean padding (`16px 18px`), focus glow, and proper grid gaps (`gap: 20px`).
+- Verified build with `npm run build`.
+
+

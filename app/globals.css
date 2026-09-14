@@ -268,7 +268,24 @@ img { max-width: 100%; }
 .whatsapp-trigger:hover { background:var(--accent); color:var(--ink); border-color:var(--accent); transform:translateY(-2px); }
 .wa-icon { font-size:12px; }
 
+/* Contact */
+.contact-grid { display:grid; grid-template-columns:.8fr 1.4fr; gap:70px; }
+.contact-title { margin:12px 0 0; font-size:clamp(56px, 7vw, 110px); line-height:.84; letter-spacing:-.07em; }
+.contact-copy { margin-top:22px; color:var(--muted); font-size:14px; line-height:1.7; }
+.contact-form { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.field { display:grid; gap:8px; }
+.field--full { grid-column:1 / -1; }
+.field label { font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:500; }
+.field input, .field textarea, .field select { width:100%; border:1px solid var(--line); background:var(--paper); padding:16px 18px; outline:none; color:var(--ink); font-size:14px; border-radius:8px; transition:border-color .25s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease); }
+.field textarea { min-height:160px; resize:vertical; }
+.field input:focus, .field textarea:focus, .field select:focus { border-color:var(--ink); background:#ffffff; box-shadow:0 0 0 3px rgba(18,18,18,.06); }
+.form-note { font-family:var(--mono); font-size:9px; color:var(--muted); line-height:1.5; }
+.form-actions { display:flex; align-items:center; justify-content:space-between; gap:20px; grid-column:1 / -1; margin-top:10px; }
+.status { font-family:var(--mono); font-size:10px; color:var(--muted); }
+.status a { text-decoration:underline; text-underline-offset:3px; color:var(--ink); font-weight:600; }
+
 .whatsapp-modal { position:fixed; inset:0; z-index:2400; display:grid; place-items:center; padding:20px; }
+
 .whatsapp-modal-backdrop { position:absolute; inset:0; border:0; background:rgba(18,18,18,.72); backdrop-filter:blur(10px); cursor:pointer; }
 .whatsapp-modal-panel { position:relative; z-index:1; width:min(560px,100%); max-height:calc(100svh - 40px); overflow:auto; padding:42px; background:var(--paper); color:var(--ink); border:1px solid var(--line); box-shadow:0 24px 80px rgba(0,0,0,.28); }
 .whatsapp-modal-panel h2 { margin:14px 0 10px; font-size:clamp(42px,7vw,76px); line-height:.86; letter-spacing:-.07em; }
