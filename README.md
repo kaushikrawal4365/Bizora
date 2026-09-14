@@ -25,3 +25,11 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
 - Kept the homepage showcase focused on three projects.
 - Expanded `/work` into a two-column archive so the fourth project appears in the second row.
 - Verified the updated project with a clean `npm run build`.
+
+### 2026-09-14 - Lead capture
+- Fixed sidebar and mobile navigation links so `HOME`, the logo, and section links work correctly from `/work` and other routes.
+- Added Resend-backed owner notifications to `kaushik.rawalwork@gmail.com` and automatic confirmation replies to submitted lead emails.
+- Added a direct email fallback when form delivery fails.
+- Added a WhatsApp lead modal that collects basic details and opens a prefilled message to `+91 7892473384`, including the selected package when available.
+- Required production environment variables: `RESEND_API_KEY`, `RESEND_FROM_EMAIL` using a verified sender, and `CONTACT_TO_EMAIL=kaushik.rawalwork@gmail.com`.
+- Verified with a clean `npm run build`.
