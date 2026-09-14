@@ -177,6 +177,10 @@ img { max-width: 100%; }
 .service-flip { position:absolute; right:25px; top:24px; width:34px; height:34px; border:1px solid currentColor; border-radius:50%; background:transparent; font-size:20px; line-height:1; cursor:pointer; }
 .service-flip--back { color:var(--bg); }
 .service-interest { margin-top:28px; }
+@media (hover:hover) and (pointer:fine) {
+  .service-card:hover .service-card-inner { transform:rotateY(180deg); }
+  .service-card .service-flip { display:none; }
+}
 
 /* Pricing */
 .pricing-head { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:42px; }

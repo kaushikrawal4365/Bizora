@@ -5,7 +5,7 @@ import { SiteChrome } from "@/components/navigation/SiteChrome";
 export const metadata: Metadata = {
   title: "BIZORA — Digital experiences for businesses with ambition.",
   description: "BIZORA builds modern digital experiences for ambitious businesses.",
-  metadataBase: new URL("https://bizora.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://bizora-psi.vercel.app"),
   openGraph: {
     title: "BIZORA — Digital experiences for businesses with ambition.",
     description: "Modern websites, digital products and experiences for businesses ready to grow.",

@@ -33,3 +33,14 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
 - Added a WhatsApp lead modal that collects basic details and opens a prefilled message to `+91 7892473384`, including the selected package when available.
 - Required production environment variables: `RESEND_API_KEY`, `RESEND_FROM_EMAIL` using a verified sender, and `CONTACT_TO_EMAIL=kaushik.rawalwork@gmail.com`.
 - Verified with a clean `npm run build`.
+
+### 2026-09-14 - Environment setup
+- Local environment variables are loaded from the project-root `.env` file; files inside component folders are not loaded by Next.js.
+- Configured `NEXT_PUBLIC_SITE_URL` for metadata and lead emails: https://bizora-psi.vercel.app
+- `CONTACT_TO_EMAIL` is the owner inbox. `RESEND_FROM_EMAIL` must be a Resend-approved sender; a personal Gmail address cannot be used as the sender without Resend verification.
+
+### 2026-09-14 - Production verification
+- Added automatic hover rotation for the From Idea to Impact service cards on pointer devices, with touch fallback controls preserved.
+- Configured the live Vercel URL in metadata and lead notification links.
+- Verified the production environment variable names are present across Production, Preview, and Development.
+- Playwright smoke-tested the homepage, four-project archive, route-aware navigation, WhatsApp lead modal, and contact API validation.
