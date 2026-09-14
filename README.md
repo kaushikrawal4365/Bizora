@@ -19,3 +19,9 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
 - Verified the project with `npm run build` and confirmed the local `/` and `/work` routes render.
 - GitHub repository: https://github.com/kaushikrawal4365/Bizora
 - Vercel production alias currently in use: https://bizora-psi.vercel.app
+
+### 2026-09-14 - Archive expansion
+- Added Resume Builder as the fourth project: https://resume-builder-jd.vercel.app/
+- Kept the homepage showcase focused on three projects.
+- Expanded `/work` into a two-column archive so the fourth project appears in the second row.
+- Verified the updated project with a clean `npm run build`.

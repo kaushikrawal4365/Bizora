@@ -139,7 +139,7 @@ img { max-width: 100%; }
 .project-card:hover .project-reveal, .project-card:focus-within .project-reveal { opacity:1; transform:translateY(0); }
 .work-cta { display:flex; justify-content:center; margin-top:34px; }
 .work-archive .work-copy { margin:24px 0 0; }
-.work-archive-grid { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px; margin-top:52px; }
+.work-archive-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px; margin-top:52px; }
 
 /* Industries */
 .industry-head { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:50px; }
