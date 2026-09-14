@@ -44,3 +44,18 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
 - Configured the live Vercel URL in metadata and lead notification links.
 - Verified the production environment variable names are present across Production, Preview, and Development.
 - Playwright smoke-tested the homepage, four-project archive, route-aware navigation, WhatsApp lead modal, and contact API validation.
+
+### 2026-09-14 23:49 IST - High-Impact UI, Cursor & CTA Enhancements
+- **Hero Title Layering**: Raised `hero-copy` stacking context (`z-index: 10`) and added right-padding on `.hero-title .line` so the trailing 'S' in `EXPERIENCES` is fully visible and never clipped or covered by floating stage elements.
+- **Dynamic & High-Contrast Custom Cursor**:
+  - Added marquee hover detection (`.cursor-marquee`): cursor outer follower expands to **84px diameter** with a **4px thick lime green border** (`#b3ff4b`), glowing backdrop filter, and glowing white dot center.
+  - Added dark section contrast (`.cursor-on-dark`): automatically switches follower border to high-contrast white `#ffffff` on dark cards/sections (Card 01 "MAKE IT REAL", project cards, CTA card, About section).
+  - Expanded interactive focus ring (`.cursor-focus`) for all links, buttons, and cards with translucent lime green glow.
+- **"From Idea to Impact" Service Cards**:
+  - Increased card minimum height to `440px` and restructured front/back card layouts into flex containers.
+  - Standardized padding (`36px 30px 42px`) so that the `I'M INTERESTED ↗` button on Card 01 ("MAKE IT REAL") and all service cards has a generous **42px bottom gap** from the card end.
+- **Interactive CTA Orbit & WhatsApp Polish**:
+  - Transformed `<div className="cta-orbit">` into an interactive rotating agency orb badge featuring spinning curved SVG text `"BIZORA STUDIO • QUICK START • FAST SHIPPING • "` and a central floating `TALK ↗` button that smooth-scrolls to `#contact`.
+  - Upgraded `.whatsapp-trigger` button with glassmorphism styling, crisp white text contrast, WhatsApp icon indicator, and lime hover accent.
+- Verified build cleanly with `npm run build` (0 errors, 0 warnings).
+
