@@ -8,7 +8,8 @@ export function Cursor() {
   useEffect(() => {
     if (
       window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-      !window.matchMedia("(pointer: fine)").matches
+      !window.matchMedia("(pointer: fine)").matches ||
+      window.innerWidth <= 1024
     )
       return;
 

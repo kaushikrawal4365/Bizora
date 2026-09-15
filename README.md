@@ -64,4 +64,20 @@ Before production, replace placeholder legal/social links and the WhatsApp URL.
 - Enhanced form input aesthetics with rounded corners, clean padding (`16px 18px`), focus glow, and proper grid gaps (`gap: 20px`).
 - Verified build with `npm run build`.
 
+### 2026-09-15 22:56 IST - Mobile & Tablet Responsiveness & Navigation Overhaul
+- **Line-by-Line Mobile Navigation Menu**:
+  - Overhauled `MobileNav.tsx` and `.mobile-overlay-nav`: replaced crowded inline links with a structured vertical list of full-width navigation rows.
+  - Each item displays a 2-digit index (`01`, `02`, ...), high-contrast uppercase title (`font-size: clamp(21px, 5.2vw, 30px)`), and trailing arrow indicator `↗`.
+  - Added comfortable touch hit targets (`padding: 15px 8px`), bottom dividers (`rgba(255,255,255,0.07)`), and responsive active/hover lime-green (`#b3ff4b`) feedback.
+  - Integrated dynamic dark header inversion (`.mobile-nav.is-open`) with crisp white branding, top section counter badge, and bottom quick-action CTA (`START A PROJECT ↗` + WhatsApp / direct email links).
+  - Added body scroll locking (`document.body.style.overflow = "hidden"`) during menu expansion to prevent page scrolling behind the overlay.
+- **Tablet & Mobile Layout Polish**:
+  - **Service Cards ("From Idea to Impact")**: Fixed the restrictive `290px` mobile override by setting `min-height: 420px` (tablets) and `410px` (phones) so card faces have generous padding and the `"I'M INTERESTED ↗"` button never clips.
+  - **Work Showcase**: Adapted `.work-rail` to 2 columns on tablets and 1 column on mobile, with always-visible `.project-reveal` cards on touch devices.
+  - **Hero Section**: Rescaled `.hero-title` and `.hero-stage` floating graphics/burst badge to avoid screen boundary clipping on tablets and narrow devices.
+  - **Industries & Pricing Grids**: Standardized multi-column breakpoints for iPads/tablets (2 columns) and compact mobile devices.
+  - **Touch Cursor Suppression**: Hid desktop cursor followers (`.cursor-dot`, `.cursor-follower`) on touch devices and screen widths $\le$ 1024px.
+- Verified build cleanly with `npm run build` (0 errors, 16 static routes successfully generated).
+
+
 
